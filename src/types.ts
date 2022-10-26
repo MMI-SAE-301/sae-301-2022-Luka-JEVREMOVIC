@@ -8,9 +8,12 @@ export const colors = {
     "#000000": "Noir",
     "#FFFFFF": "Blanc",
     "#0C4E1E": "Vert",
-    "#A66C16": "Orange",
-    "#565656": "Gris",
-    "#49370A ": "Marron",
+    "#A66C16": "Rouge",
+    "#0000FF": "Bleu",
+    "#FF9C00": "Orange",
+    "#D11FEE": "Rose",
+    "#D9D9D9": "Gris",
+
 };
 
 export const materiaux = [
