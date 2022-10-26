@@ -1,14 +1,21 @@
 <template>
   <nav>
-    <h4 class="text-xl">
-      <Bars3Icon class="inline-block h-5 w-5 text-blue-500" />
-      menu (dans <code class="font-mono">/src/App.vue</code>)
-    </h4>
+    <h1 class="flex text-xl">
+      TIK TAK
+    </h1>
     <ul>
       <li>
-        <router-link class="text-red-600 underline" to="/">
-          lien vers
-          <code class="font-mono">/src/pages/index.vue</code>
+        <router-link class="justify-around text-red-600" to="/">
+          <code class="font-mono">Accueil</code>
+        </router-link>
+        <router-link class="justify-around text-red-600" to="/">
+          <code class="font-mono">Personnalisation</code>
+        </router-link>
+        <router-link class="justify-around text-red-600" to="/">
+          <code class="font-mono">Liste</code>
+        </router-link>
+        <router-link class="justify-around text-red-600" to="/CompteView">
+          <code class="font-bolt">Compte</code>
         </router-link>
       </li>
     </ul>
