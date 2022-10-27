@@ -8,9 +8,11 @@ import { Bars3Icon } from "@heroicons/vue/20/solid";
     <header>
       <div class="bg-gray-800 sm:flex-end sm:items-center sm:justify-between">
         <nav>
-          <h1 class="flex text-white text-xl">
-            TIK TAK
-          </h1>
+          <a href="/">
+            <h1 class="flex text-white text-3xl">
+              TIK TAK
+            </h1>
+          </a>
           <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-white">
             <li class="flex p-3 justify-around">
               <router-link
@@ -52,11 +54,8 @@ import { Bars3Icon } from "@heroicons/vue/20/solid";
 
     <footer class="p-4 bg-white shadow md:px-6 md:py-8 dark:bg-black">
       <div class="sm:flex sm:items-center sm:justify-between">
-        <RouterLink to="/" class="flex items-center mb-4 sm:mb-0">
-          <img src="" class="mr-3 h-8" alt="" />
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">TIK TAK</span>
-        </RouterLink>
-        <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-white">
+
+        <ul class="flex items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-white">
           <li>
             <a href="/" class="mr-4 hover:underline md:mr-6 ">Accueil</a>
           </li>
@@ -70,10 +69,15 @@ import { Bars3Icon } from "@heroicons/vue/20/solid";
             <a href="compte" class="hover:underline">Compte</a>
           </li>
         </ul>
-        <a href="/" class="flex items-center mb-4 sm:mb-0">
+        <a href="/" class="items-center mb-4 sm:mb-0">
           <img src="" class="mr-3 h-8" alt="" />
           <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
         </a>
+        <RouterLink to="/" class="flex items-center mb-4 sm:mb-0">
+          <span class="text-center self-center text-2xl font-semibold whitespace-nowrap dark:text-white">TIK
+            TAK</span>
+        </RouterLink>
+
       </div>
       <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"><a href="https://flowbite.com/"

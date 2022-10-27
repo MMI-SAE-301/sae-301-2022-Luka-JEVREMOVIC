@@ -42,20 +42,30 @@ async function upsertMontre(dataForm, node) {
 <template>
     <div class="p-2">
 
-        <h2>Personnalisation</h2>
-        <ul class="flex gap-1">
-            <li><a href="#profil">Profil</a></li>
-            <li><a href="#dessus">Dessus</a></li>
+        <h2 class="text-center text-2xl">Personnalisation</h2>
+        <ul>
+            <li class="flex gap-1 bg-white border-2 text-black rounded-xs hover:bg-black hover:text-white p-2"><a
+                    href="#profil">Profil</a></li>
+            <li class="flex gap-1 bg-white border-2 text-black rounded-xs hover:bg-black hover:text-white p-2"><a
+                    href="#dessus">Dessus</a></li>
         </ul>
         <div class="carousel w-64">
             <MontreProfil class="carousel-item w-64" v-bind="montre" id="profil" />
             <MontreDessusVue class="carousel-item w-64" v-bind="montre" id="dessus" />
         </div>
 
-        <FormKit type="form" v-model="montre" @submit="upsertMontre">
+        <FormKit type="form" v-model="montre" @submit="upsertMontre" :submit-attrs="{
+            classes: {
+                input:
+                    'bg-white font-athena border-2 text-black rounded-xs hover:bg-black hover:text-white p-2',
+            },
+        }">
             <FormKitListColors name="bracelet" label="Bracelet"></FormKitListColors>
-            <FormKitListColors name="cadrant" label="Bracelet"></FormKitListColors>
-            <FormKitListColors name="ecran" label="Bracelet"></FormKitListColors>
+            <hr>
+            <FormKitListColors name="cadrant" label="Cadrant"></FormKitListColors>
+            <hr>
+            <FormKitListColors name="ecran" label="Ecran"></FormKitListColors>
+
         </FormKit>
     </div>
 </template>

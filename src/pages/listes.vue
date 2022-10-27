@@ -19,7 +19,7 @@ if (error) {
 </script>
 <template>
     <section>
-        <h1 class="text-2xl">Mes montres</h1>
+        <h1 class="text-center text-2xl">Mes montres</h1>
         <div class="flex flex-wrap justify-between">
             <div class="w-64" v-for="x in montre" :key="x.id">
                 <MontreProfil v-bind="x" />

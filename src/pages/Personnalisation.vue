@@ -38,7 +38,5 @@ async function upsertMontre(dataForm, node) {
 <template>
     <div>
         <FormMontreVue></FormMontreVue>
-
-        <ListeDavVue></ListeDavVue>
     </div>
 </template>
