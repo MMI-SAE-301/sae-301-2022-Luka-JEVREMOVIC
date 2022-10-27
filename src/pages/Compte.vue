@@ -4,6 +4,7 @@ import LoginLogout from '@/components/LoginLogout.vue'
 
 <template>
     <section>
+        <h1></h1>
         <LoginLogout />
     </section>
 </template>
