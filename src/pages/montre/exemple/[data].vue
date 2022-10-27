@@ -1,10 +1,10 @@
 
 <script setup lang="ts">
-import FormMontreVue from "../../../components/FormMontre.vue";
+import FormMontre from "@/components/FormMontre.vue";
 defineProps<{
     data: string;
 }>();
 </script>
 <template>
-    <FormMontreVue :data="JSON.parse(data)" />
+    <FormMontre :data="JSON.parse(data)" />
 </template>

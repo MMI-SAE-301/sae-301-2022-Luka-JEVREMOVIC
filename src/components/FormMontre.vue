@@ -1,30 +1,39 @@
 <script setup lang="ts">
 
 import type { Montre } from "@/types";
-import { colors } from "@/types";
+import { supabase } from "@/supabase";
 import { ref } from 'vue';
 import MontreDessusVue from "./MontreDessus.vue";
 import FormKitListColors from "./FormKitListColors.vue";
 
+import { useRouter } from "vue-router";
 
+const router = useRouter();
 
 const montre = ref<Montre>({});
 
-const props = defineProps<{
-    data?: Montre;
-    id?: string;
-}>();
 
+
+const props = defineProps(["id"]);
+if (props.id) {
+    // On charge les données de la montre
+    let { data, error } = await supabase.from("montre")
+        .select("*")
+        .eq("id_montre", props.id);
+    if (error || !data)
+        console.log("n'a pas pu charger le table montre :", error);
+    else montre.value = data[0];
+}
 
 // @ts-ignore
 async function upsertMontre(dataForm, node) {
-    const { data, error } = await supabase.from("Montre-Connectée").upsert(dataForm);
+    const { data, error } = await supabase.from("montre").upsert(dataForm);
     if (error || !data) {
         node.setErrors([error?.message]);
     }
     else {
         node.setErrors([]);
-        router.push('/');
+        router.push('/listes');
     }
 };
 
