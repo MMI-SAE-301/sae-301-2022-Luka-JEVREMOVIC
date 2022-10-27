@@ -3,8 +3,8 @@ import LoginLogout from '@/components/LoginLogout.vue'
 </script>
 
 <template>
+    <h1>Votre compte</h1>
     <section>
-        <h1></h1>
         <LoginLogout />
     </section>
 </template>

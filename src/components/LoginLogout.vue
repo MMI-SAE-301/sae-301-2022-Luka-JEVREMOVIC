@@ -15,9 +15,3 @@ import { supabase, user } from '../supabase';
         </button>
     </div>
 </template>
-
-<script>
-
-
-
-</script>

@@ -1,21 +1,13 @@
 <script setup lang="ts">
-import FormKitListColors from '@/components/FormKitListColors.vue'
-import MontreDessusVue from '@/components/MontreDessus.vue';
-import MontreProfilVue from '@/components/MontreProfil.vue';
-import FormMontre from '@/components/FormMontre.vue';
-
-
+import MontreDessus from "@/components/MontreDessus.vue"
+import FormMontreVue from "@/components/FormMontre.vue";
+import ListeDavVue from "./ListeDav.vue";
 </script>
 
 <template>
-    <section>
+    <div>
+        <FormMontreVue></FormMontreVue>
 
-
-        <button>14cm</button>
-        <button>14cm</button>
-        <div class="carousel w-64">
-            <MontreDessusVue />
-            <MontreProfilVue />
-        </div>
-    </section>
+        <ListeDavVue></ListeDavVue>
+    </div>
 </template>
