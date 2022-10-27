@@ -5,31 +5,38 @@ import MontreDessus from "@/components/MontreDessus.vue"
 
 <template>
   <section>
-    <h6 class="text-3xl">"Créer votre montre"</h6>
-    <p class="text-2xl">Quand vous libérez toute votre
-      créativité, rien n’est impossible.
-      Imaginez une montre qui vous resssemble grâce a notre service de personnalisation. Et ce en un click.</p>
+    <div class="grid grid-flow-row-dense grid-cols-2">
+      <div class="">
+        <MontreProfil />
+      </div>
+      <div class="w-96">
+        <h6 class="text-3xl">"Créer votre montre"</h6>
+        <p class="text-2xl">Quand vous libérez toute votre
+          créativité, rien n’est impossible.
+          Imaginez une montre qui vous resssemble grâce a notre service de personnalisation. Et ce en un click.</p>
+        <router-link to="/Personnalisation"><button
+            class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full">Personnaliser</button>
+        </router-link>
+      </div>
 
-    <router-link to="/Personnalisation"><button
-        class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-full">Personnaliser</button>
-    </router-link>
-
-    <MontreProfil />
-
+    </div>
     <hr class="my-8 h-px bg-gray-200 border-0 dark:bg-gray-700">
+    <div class="grid grid-flow-row-dense grid-cols-2">
+      <div class="">
+        <h6 class="text-3xl">"Qu'est-ce que TIK TAK ?"</h6>
+        <p class="text-2xl">TIK TAK c’est l’excellence
+          franc-comtoise, créer a
+          Besançon notre atelier a
+          pour objectif de réaliser
+          votre montre d’une qualité
+          indéniable. C’est ça Tik Tak
+          des produits de bonnes et
+          une personnalisation faites
+          pour vous.</p>
+      </div>
 
-    <h6 class="text-3xl">"Qu'est-ce que TIK TAK ?"</h6>
-    <p class="text-2xl">TIK TAK c’est l’excellence
-      franc-comtoise, créer a
-      Besançon notre atelier a
-      pour objectif de réaliser
-      votre montre d’une qualité
-      indéniable. C’est ça Tik Tak
-      des produits de bonnes et
-      une personnalisation faites
-      pour vous.</p>
-
-    <MontreDessus />
+      <MontreDessus />
+    </div>
   </section>
 
 </template>

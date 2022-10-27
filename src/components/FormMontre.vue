@@ -54,18 +54,20 @@ async function upsertMontre(dataForm, node) {
             <MontreDessusVue class="carousel-item w-64" v-bind="montre" id="dessus" />
         </div>
 
-        <FormKit type="form" v-model="montre" @submit="upsertMontre" :submit-attrs="{
-            classes: {
-                input:
-                    'bg-white font-bahnsrift border-2 text-black rounded-xl hover:bg-black hover:text-white p-2',
-            },
-        }">
-            <FormKitListColors name="bracelet" label="Bracelet"></FormKitListColors>
-            <hr>
-            <FormKitListColors name="cadrant" label="Cadrant"></FormKitListColors>
-            <hr>
-            <FormKitListColors name="ecran" label="Ecran"></FormKitListColors>
+        <div class="grid grid-flow-row-dense grid-cols-2">
+            <FormKit type="form" v-model="montre" @submit="upsertMontre" :submit-attrs="{
+                classes: {
+                    input:
+                        'bg-white font-bahnsrift border-2 text-black rounded-xl hover:bg-black hover:text-white p-2',
+                },
+            }">
+                <FormKitListColors name="bracelet" label="Bracelet"></FormKitListColors>
+                <hr>
+                <FormKitListColors name="cadrant" label="Cadrant"></FormKitListColors>
+                <hr>
+                <FormKitListColors name="ecran" label="Ecran"></FormKitListColors>
 
-        </FormKit>
+            </FormKit>
+        </div>
     </div>
 </template>
