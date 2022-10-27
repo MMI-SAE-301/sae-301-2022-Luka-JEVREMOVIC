@@ -7,7 +7,7 @@ export interface Montre {
 export const colors = {
     "#000000": "Noir",
     "#FFFFFF": "Blanc",
-    "#0C4E1E": "Vert",
+    "#00FF00": "Vert",
     "#A66C16": "Rouge",
     "#0000FF": "Bleu",
     "#FF9C00": "Orange",
@@ -28,8 +28,8 @@ export const materiaux = [
         label: "tissu",
     },
     {
-        value: "7e8d16ac-db0a-4594-8f78-f313e029158d",
-        img: "https://www.usinenouvelle.com/expo/img/feuille-caoutchouc-sbr-noir-013013680-product_zoom.jpg",
-        label: "caoutchouc",
+        value: "",
+        img: "",
+        label: "alluminium",
     },
 ];
