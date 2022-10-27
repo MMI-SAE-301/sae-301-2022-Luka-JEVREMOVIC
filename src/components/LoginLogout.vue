@@ -8,7 +8,7 @@ import { supabase, user } from '../supabase'
         <div class="bg-light_grey">
             <h2 class=" ml-28 w-1/2 font-aboreto text-xl">Compte</h2>
             <!-- <hr class="ml-32 mt-4 mb-8 h-0.5 w-32 bg-black" /> -->
-            <div class="bg-gray-800">
+            <div class="bg-gray-800 border">
                 <h2 class="text-center text-2xl">Bienvenue sur TIK TAK</h2>
 
                 <div class="text-center">

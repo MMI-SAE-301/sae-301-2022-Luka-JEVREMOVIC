@@ -36,10 +36,8 @@ import { Bars3Icon } from "@heroicons/vue/20/solid";
               </router-link>
             </li>
             <li class="flex p-3 justify-around">
-              <router-link
-                class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:underline"
-                to="/Compte">
-                <code class="font-bolt">Compte</code>
+              <router-link to="compte">
+                <img src="src/assets/images/Group.png" alt="compte" class="w-10 h-10">
               </router-link>
             </li>
           </ul>
@@ -77,7 +75,8 @@ import { Bars3Icon } from "@heroicons/vue/20/solid";
           <span class="text-center self-center text-2xl font-semibold whitespace-nowrap dark:text-white">TIK
             TAK</span>
         </RouterLink>
-
+        <a href="http://mmimontbeliard.com/"><img src="src/assets/images/MMI_dut_small_white.png" alt="MMI-Logo"
+            class="w-10 h-10"></a>
       </div>
       <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400"><a href="https://flowbite.com/"

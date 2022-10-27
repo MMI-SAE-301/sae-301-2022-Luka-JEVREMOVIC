@@ -57,7 +57,7 @@ async function upsertMontre(dataForm, node) {
         <FormKit type="form" v-model="montre" @submit="upsertMontre" :submit-attrs="{
             classes: {
                 input:
-                    'bg-white font-athena border-2 text-black rounded-xs hover:bg-black hover:text-white p-2',
+                    'bg-white font-bahnsrift border-2 text-black rounded-xl hover:bg-black hover:text-white p-2',
             },
         }">
             <FormKitListColors name="bracelet" label="Bracelet"></FormKitListColors>
